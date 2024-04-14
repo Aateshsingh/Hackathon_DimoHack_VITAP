@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<section id="upload-project">
+    <h2>Upload New Project</h2>
+    <form>
+        <div class="form-group">
+            <label for="project-title">Title:</label>
+            <input type="text" id="project-title" name="project-title" required>
+        </div>
+        <div class="form-group">
+            <label for="project-description">Description:</label>
+            <textarea id="project-description" name="project-description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="project-file">Upload File:</label>
+            <input type="file" id="project-file" name="project-file" accept=".pdf,.doc,.docx" required>
+        </div>
+        <button type="submit">Upload</button>
+    </form>
+</section>
+
+<section id="previous-projects">
+    <h2>Previous Projects</h2>
+    <ul>
+        <li><a href="#">Project 1</a></li>
+        <li><a href="#">Project 2</a></li>
+        <li><a href="#">Project 3</a></li>
+        <!-- Add more previous projects here -->
+    </ul>
+</section>
+

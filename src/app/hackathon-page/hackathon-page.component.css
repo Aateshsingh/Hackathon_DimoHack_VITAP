@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    background-color: black;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+#hackathons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust the spacing between items */
+}
+
+.hackathon {
+    position: relative;
+    width: calc(33.3% - 80px); /* Adjust the width of each item to fit three items per row */
+    height: calc(50% - 80px); /* Set the height equal to the width to make it square */
+    margin-bottom: 20px; /* Adjust the spacing between rows */
+    overflow: hidden; /* Hide overflow to prevent the neon effect from showing outside the border */
+    transition: width 0.3s, height 0.3s; /* Added transition for smooth width and height change */
+}
+
+.hackathon button {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    border: 2px solid transparent; /* Add a transparent border to maintain the button size */
+    border-radius: 10px; /* Slightly curved border */
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s, color 0.3s; /* Added transition for smooth color change */
+    overflow: hidden; /* Hide overflow to prevent the neon effect from showing outside the button */
+    transform-origin: center; /* Set the transform origin to the center */
+}
+
+.hackathon button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    border: 2px solid #00aaff; /* Neon blue color */
+    border-radius: 10px; /* Slightly curved border */
+    animation: neon-border 2s linear infinite; /* Continuous animation along the border */
+}
+
+@keyframes neon-border {
+    0% {
+        transform: translateX(0) translateY(0); /* Start position */
+    }
+    25% {
+        transform: translateX(100%) translateY(0); /* Move along the top border */
+    }
+    50% {
+        transform: translateX(100%) translateY(100%); /* Move along the right border */
+    }
+    75% {
+        transform: translateX(0) translateY(100%); /* Move along the bottom border */
+    }
+    100% {
+        transform: translateX(0) translateY(0); /* Return to the start position */
+    }
+}
+
+.hackathon button:hover {
+    background-color: #444; /* Change background color to dark grey on hover */
+    color: #fff; /* Change text color to white on hover */
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+.hackathon button:active {
+    transform: scale(1.2); /* Enlarge the button on click */
+}
+
+.hackathon:hover {
+    width: calc(33.33% - 20px); /* Reduce width to adjust for border increase */
+    height: calc(33.33% - 20px); /* Reduce height to adjust for border increase */
+    border-radius: 10px; /* Keep border radius unchanged */
+}

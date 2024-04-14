@@ -1,0 +1,16 @@
+/* home.component.css */
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107; /* Change to your desired hover color */
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745; /* Change to your desired hover color */
+    border-color: #28a745; /* Change to your desired hover color */
+    color: #fff; /* Change to your desired hover color */
+  }
+  

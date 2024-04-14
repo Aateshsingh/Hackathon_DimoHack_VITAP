@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: #ff6f61;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ed4853;
+}
+
+section {
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff6f61;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ff6f61;
+    border-radius: 10px;
+    font-size: 1.2em;
+    background-color: #f4f4f4;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    transform: scale(1.05);
+    border-color: #ed4853;
+}
+
+button[type="submit"] {
+    background-color: #ed4853;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6f61;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff6f61;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #ed4853;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}

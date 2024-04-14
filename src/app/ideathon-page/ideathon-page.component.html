@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+
+<section id="upcoming-ideathons">
+    <h2>Upcoming Ideathons</h2>
+    
+    <div class="ideathon">
+        <h3>Ideathon: Innovate for Tomorrow</h3>
+        <p>Description: Join us for a day of creative problem-solving and innovation. Bring your ideas to life and make an impact on the world.</p>
+        <p>Date: April 25, 2024</p>
+        <p>Location: Virtual</p>
+    </div>
+    
+    <div class="ideathon">
+        <h3>Ideathon: Future Tech Ideas</h3>
+        <p>Description: Explore cutting-edge technologies and brainstorm innovative solutions for future challenges.</p>
+        <p>Date: May 10, 2024</p>
+        <p>Location: Online</p>
+    </div>
+    
+    <div class="ideathon">
+        <h3>Ideathon: Sustainability Hack</h3>
+        <p>Description: Join us in creating sustainable solutions for a greener future. Let's hack for the planet!</p>
+        <p>Date: May 30, 2024</p>
+        <p>Location: Hybrid (Virtual & In-person)</p>
+    </div>
+    
+    <div class="ideathon">
+        <h3>Ideathon: Social Impact Challenge</h3>
+        <p>Description: Use your creativity to address pressing social issues and drive positive change in your community.</p>
+        <p>Date: June 15, 2024</p>
+        <p>Location: In-person (New York City)</p>
+    </div>
+    
+    <div class="ideathon">
+        <h3>Ideathon: HealthTech Innovation</h3>
+        <p>Description: Dive into the world of healthcare technology and brainstorm solutions to improve patient care and outcomes.</p>
+        <p>Date: July 5, 2024</p>
+        <p>Location: Online</p>
+    </div>
+</section>
+
+<section id="submit-idea">
+    <h2>Submit Your Idea</h2>
+    <form onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="idea-title">Title:</label>
+            <input type="text" id="idea-title" name="idea-title" required>
+        </div>
+        <div class="form-group">
+            <label for="idea-description">Description:</label>
+            <textarea id="idea-description" name="idea-description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="idea-email">Email:</label>
+            <input type="email" id="idea-email" name="idea-email" required>
+        </div>
+        <button type="submit">Submit Idea</button>
+    </form>
+</section>
